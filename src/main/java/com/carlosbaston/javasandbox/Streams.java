@@ -1,9 +1,11 @@
-package com.carlosbaston.javasandbox.streams;
+package com.carlosbaston.javasandbox;
+
+import com.carlosbaston.javasandbox.model.Gender;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Streams{
 
     public static void main(String[] args) {
         List<Person> people = getPeople();
@@ -79,3 +81,5 @@ public class Main {
     }
 
 }
+
+
