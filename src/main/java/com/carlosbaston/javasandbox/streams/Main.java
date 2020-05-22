@@ -8,10 +8,6 @@ public class Main {
     public static void main(String[] args) {
         List<Person> people = getPeople();
 
-        // Imperative approach ❌
-
-        // Declarative approach ✅
-
         //Filter
         List<Person> filter = people.stream()
                 .filter(person -> person.getGender().equals(Gender.MALE))
@@ -32,12 +28,12 @@ public class Main {
         // Any match
         boolean anyMatch = people.stream()
                 .anyMatch(person -> person.getAge() == 120);
-        System.out.println(anyMatch);
+        // System.out.println(anyMatch);
 
         // None match
         boolean nonMatch = people.stream()
                 .noneMatch(person -> person.getAge() == 121);
-        System.out.println(nonMatch);
+        // System.out.println(nonMatch);
 
         // Max
         people.stream()
@@ -45,17 +41,19 @@ public class Main {
                 .ifPresent(System.out::println);
 
         // Min
+        /*
         people.stream()
                 .min(Comparator.comparing(Person::getAge))
                 .ifPresent(System.out::println);
+        */
 
         // Group
         Map<Gender, List<Person>> groupByGender = people.stream()
                 .collect(Collectors.groupingBy(Person::getGender));
 
         groupByGender.forEach((gender, person) -> {
-            System.out.println(gender);
-            person.forEach(System.out::println);
+//            System.out.println(gender);
+//            person.forEach(System.out::println);
         });
 
 //        Optional<String> oldestMale = people.stream()
@@ -64,6 +62,7 @@ public class Main {
 //                .map(Person::getName);
 
 //        oldestMale.ifPresent(System.out::println);
+
 
     }
 
