@@ -1,6 +1,7 @@
 package com.carlosbaston.javasandbox;
 
 import com.carlosbaston.javasandbox.model.Gender;
+import com.carlosbaston.javasandbox.model.Person;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -70,13 +71,16 @@ public class Streams{
 
     private static List<Person> getPeople() {
         List<Person> people = new ArrayList<>();
-        people.add(new Person("Antonio", 20, Gender.MALE));
-        people.add(new Person("Alina Smith", 33, Gender.FEMALE));
-        people.add(new Person("Helen White", 57, Gender.FEMALE));
-        people.add(new Person("Alex Boz", 14, Gender.MALE));
-        people.add(new Person("Jamie Goa", 99, Gender.MALE));
-        people.add(new Person("Anna Cook", 7, Gender.FEMALE));
-        people.add(new Person("Zelda Brown", 120, Gender.FEMALE));
+        people.add(new Person("Antonio", "a@gmail.com", 22,  Gender.MALE));
+        people.add(new Person("Alina Smith", "as@gmail.com", 33,
+                Gender.FEMALE));
+        people.add(new Person("Helen White", "hw@gmail.com", 57,
+                Gender.FEMALE));
+        people.add(new Person("Alex Boz", "ab@gmail.com", 14, Gender.MALE));
+        people.add(new Person("Jamie Goa", "jg@gmail.com", 99, Gender.MALE));
+        people.add(new Person("Anna Cook", "ac@gmail.com", 7, Gender.FEMALE));
+        people.add(new Person("Zelda Brown", "zb@gmail.com", 120,
+                Gender.FEMALE));
         return people;
     }
 
