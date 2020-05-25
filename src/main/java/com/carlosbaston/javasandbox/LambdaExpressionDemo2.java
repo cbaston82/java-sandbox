@@ -1,6 +1,6 @@
 package com.carlosbaston.javasandbox;
 
-public class LambdaImplementingRunnerInterfaceRunMethod {
+public class LambdaExpressionDemo2 {
 
     public static void main(String[] args) {
 

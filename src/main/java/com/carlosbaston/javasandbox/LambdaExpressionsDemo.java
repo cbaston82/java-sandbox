@@ -2,7 +2,7 @@ package com.carlosbaston.javasandbox;
 
 import java.util.function.*;
 
-public class LambdaExpressions {
+public class LambdaExpressionsDemo {
 
     public static void main(String[] arg) {
 

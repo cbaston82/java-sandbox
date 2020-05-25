@@ -2,7 +2,7 @@ package com.carlosbaston.javasandbox;
 
 import java.util.HashSet;
 
-public class HashSetDemo {
+public class HashSetDemo1 {
 
     public static void main(String[] args) {
         HashSet<String> h = new HashSet<String>();

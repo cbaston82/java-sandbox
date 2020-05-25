@@ -1,12 +1,12 @@
-package com.carlosbaston.javasandbox.model;
+package com.carlosbaston.javasandbox.common;
 
 import java.util.Optional;
 
 public class Person {
-    private final String name;
-    private final String email;
-    private final int age;
-    private final Gender gender;
+    private String name;
+    private String email;
+    private int age;
+    private Gender gender;
 
     public Person(String name, String email, int age, Gender gender) {
         this.name = name;

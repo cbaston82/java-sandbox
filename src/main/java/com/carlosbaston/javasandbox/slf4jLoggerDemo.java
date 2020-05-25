@@ -3,7 +3,7 @@ package com.carlosbaston.javasandbox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class LoggingClass {
+public class slf4jLoggerDemo {
 
     public static void main(String[] args) {
 

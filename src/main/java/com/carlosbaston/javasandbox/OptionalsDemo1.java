@@ -1,12 +1,12 @@
 package com.carlosbaston.javasandbox;
 
 
-import com.carlosbaston.javasandbox.model.Gender;
-import com.carlosbaston.javasandbox.model.Person;
+import com.carlosbaston.javasandbox.common.Gender;
+import com.carlosbaston.javasandbox.common.Person;
 
 import java.util.Optional;
 
-public class Optionals {
+public class OptionalsDemo1 {
 
     public static void main(String[] arg) {
 
