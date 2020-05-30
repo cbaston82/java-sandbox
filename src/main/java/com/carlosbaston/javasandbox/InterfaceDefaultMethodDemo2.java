@@ -7,7 +7,7 @@ import com.carlosbaston.javasandbox.common.InterfaceDefaultMethod2;
  * Implementing multiple Interfaces with same default method. Choosing a
  * default method
  */
-public class DefaultMethodDemo2 implements InterfaceDefaultMethod1, InterfaceDefaultMethod2 {
+public class InterfaceDefaultMethodDemo2 implements InterfaceDefaultMethod1, InterfaceDefaultMethod2 {
 
     // Option: Override completely
 //    @Override
@@ -23,7 +23,7 @@ public class DefaultMethodDemo2 implements InterfaceDefaultMethod1, InterfaceDef
 
     public static void main(String[] args) {
 
-        DefaultMethodDemo2 dmd2 = new DefaultMethodDemo2();
+        InterfaceDefaultMethodDemo2 dmd2 = new InterfaceDefaultMethodDemo2();
         dmd2.method1();
 
     }

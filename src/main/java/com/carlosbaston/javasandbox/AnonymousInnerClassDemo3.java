@@ -2,6 +2,9 @@ package com.carlosbaston.javasandbox;
 
 import com.carlosbaston.javasandbox.common.InterfaceOneMethod;
 
+/**
+ * Showing difference between anonymous innerclass 'this' and lambda 'this'
+ */
 class AnonymousInnerClassDemo3 {
 
     int x = 999;
@@ -9,6 +12,7 @@ class AnonymousInnerClassDemo3 {
     public void method1() {
 
         // Here 'this' is a inner class member x = 888
+        // Able to declare instance variable in anonymous inner class
         InterfaceOneMethod smi1 = new InterfaceOneMethod() {
             int x = 888;
             public void method1() {
@@ -17,6 +21,7 @@ class AnonymousInnerClassDemo3 {
         };
 
         // Here 'this' is outer class member x = 999
+        // Not possible to declare instance variables in lambda expressions
         InterfaceOneMethod smi2 = () -> {
             int x = 1000;
             System.out.println(this.x);

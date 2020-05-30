@@ -10,6 +10,7 @@ class AnonymousInnerClassDemo2 {
     public static void main(String[] args) {
 
         InterfaceThreeMethod t = new InterfaceThreeMethod() {
+
             @Override
             public void method1() {
                 System.out.println("test1");

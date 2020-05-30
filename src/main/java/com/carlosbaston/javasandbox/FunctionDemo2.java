@@ -5,7 +5,7 @@ import java.util.function.Function;
 /**
  * Using Function >>> functional interface that returns back the function result
  */
-public class FunctionDemo1 {
+public class FunctionDemo2 {
 
     public static void main(String[] args) {
 

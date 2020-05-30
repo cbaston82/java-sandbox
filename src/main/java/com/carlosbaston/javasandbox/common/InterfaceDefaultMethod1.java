@@ -1,7 +1,7 @@
 package com.carlosbaston.javasandbox.common;
 
-public interface InterfaceDefaultMethod {
+public interface InterfaceDefaultMethod1 {
     default void method1() {
-        System.out.println("Default Method");
+        System.out.println("Default Method 1");
     }
 }

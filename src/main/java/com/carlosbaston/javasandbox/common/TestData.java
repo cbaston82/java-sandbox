@@ -69,6 +69,15 @@ public class TestData {
         return getTreeMapOfKeysIntegers;
     }
 
-
+    public static ArrayList<Student> getArrayListOfStudents() {
+        ArrayList<Student> arrayListOfStudents = new ArrayList<>();
+        arrayListOfStudents.add(new Student("Mike Miller", 35));
+        arrayListOfStudents.add(new Student("Ester Gonzales", 90));
+        arrayListOfStudents.add(new Student("Will jackson", 55));
+        arrayListOfStudents.add(new Student("Steven Williams", 65));
+        arrayListOfStudents.add(new Student("Kelly Higgins", 70));
+        arrayListOfStudents.add(new Student("Donald Cooper", 25));
+        return arrayListOfStudents;
+    }
 
 }

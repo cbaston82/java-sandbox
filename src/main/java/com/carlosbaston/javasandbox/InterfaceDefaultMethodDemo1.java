@@ -5,7 +5,7 @@ import com.carlosbaston.javasandbox.common.InterfaceDefaultMethod1;
 /**
  * Overriding 'default' method
  */
-public class DefaultMethodDemo1 implements InterfaceDefaultMethod1 {
+public class InterfaceDefaultMethodDemo1 implements InterfaceDefaultMethod1 {
 
     @Override
     public void method1() {
@@ -14,7 +14,7 @@ public class DefaultMethodDemo1 implements InterfaceDefaultMethod1 {
 
     public static void main(String[] args) {
 
-       DefaultMethodDemo1 t = new DefaultMethodDemo1();
+       InterfaceDefaultMethodDemo1 t = new InterfaceDefaultMethodDemo1();
        t.method1();
     }
 }
