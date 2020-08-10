@@ -1,12 +1,11 @@
 package com.carlosbaston.javasandbox.common;
 
-import java.util.Optional;
-
 public class Person {
-    private String name;
-    private String email;
-    private int age;
-    private Gender gender;
+
+    private final String name;
+    private final String email;
+    private final int age;
+    private final Gender gender;
 
     public Person(String name, String email, int age, Gender gender) {
         this.name = name;
@@ -15,20 +14,20 @@ public class Person {
         this.gender = gender;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     public int getAge() {
         return age;
     }
 
     public Gender getGender() {
         return gender;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Optional<String> getEmail() {
-        return Optional.ofNullable(email);
     }
 
     @Override
